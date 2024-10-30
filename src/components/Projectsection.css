@@ -1,0 +1,129 @@
+/* Styling for the project section */
+.project-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
+  
+  /* Grid layout for projects */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .project-box {
+    width: 300px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Project image */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Project content */
+  .project-content {
+    padding: 15px;
+  }
+  
+  .project-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-live, .btn-github {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .btn-live {
+    background-color: #00e676;
+  }
+  
+  .btn-github {
+    background-color: #333;
+  }
+  
+  /* Read More button */
+  .read-more {
+    margin-top: 30px;
+  }
+  
+  .read-more button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #00e676;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more button:hover {
+    background-color: #00c853;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .project-box {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .project-content h3 {
+      font-size: 1.25rem;
+    }
+  
+    .project-content p {
+      font-size: 0.9rem;
+    }
+  
+    .btn-live, .btn-github {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+  
