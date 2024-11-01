@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Vikram-ui2004.github.io/vn-portfolio",
+  "homepage": "https://Vikram-ui2004.github.io/PORT-FOLIO",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -17,9 +17,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "precommit": "npm run lint"
   },
   "eslintConfig": {
     "extends": [
